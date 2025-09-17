@@ -28,9 +28,12 @@ from typing_extensions import List, TypedDict, Optional
 from langgraph.graph import START, StateGraph
 from langchain_core.documents import Document
 
+import streamlit as st
 
-with open('fireworksai_api_key.txt', 'r') as file:
-    API_KEY = file.read().strip()
+# with open('fireworksai_api_key.txt', 'r') as file:
+#     API_KEY = file.read().strip()
+
+API_KEY = st.secrets["API_KEY"]
 
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-mpnet-base-v2"
