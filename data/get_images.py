@@ -34,7 +34,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; ImageScraper/1.0; +https://example.com/bot)"
 }
 REQUEST_TIMEOUT = 15
-SLEEP_BETWEEN = 0.6  # seconds between requests
+SLEEP_BETWEEN = 0.3  # seconds between requests
 
 
 def safe_filename(name: str) -> str:
