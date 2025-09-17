@@ -15,7 +15,6 @@ except Exception:
     START = _START()
 
 
-import random
 import pandas as pd 
 import re
 
